@@ -1,0 +1,21 @@
+Step 2: Verify Python 3.11 is recognized
+py -3.11 --version
+
+Step 3: Create the virtual environment in your project
+cd "E:\PROJECTS\DHVINO ERP 3"
+py -3.11 -m venv venv311
+
+Step 4: Activate it
+venv311\Scripts\activate
+
+Step 5: Install everything
+pip install cmake
+pip install dlib
+pip install face_recognition
+pip install git+https://github.com/ageitgey/face_recognition_models
+pip install opencv-python pandas requests PyJWT cryptography Pillow
+
+Step 6: Run your project
+venv311\Scripts\activate
+cd "E:\PROJECTS\DHVINO ERP 3"
+python erp_main.py
